@@ -85,7 +85,7 @@ export type GestureResponseDistanceType = {
   bottom?: number;
 };
 
-export type SheetDetentTypes = 'medium' | 'large' | 'all';
+export type SheetDetentTypes = 'medium' | 'large' | 'custom' | 'all';
 export type SearchBarPlacement = 'automatic' | 'inline' | 'stacked';
 
 export interface ScreenProps extends ViewProps {
