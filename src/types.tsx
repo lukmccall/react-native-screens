@@ -271,6 +271,10 @@ export interface ScreenProps extends ViewProps {
    */
   sheetCornerRadius?: number;
   /**
+   * TODO
+   */
+  sheetCustomDetents?: number[];
+  /**
    * Boolean indicating whether the sheet shows a grabber at the top.
    * Works only when `stackPresentation` is set to `formSheet`.
    * Defaults to `false`.
