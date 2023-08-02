@@ -269,7 +269,7 @@ class InnerScreen extends React.Component<ScreenProps> {
       sheetGrabberVisible = false,
       sheetCornerRadius = -1.0,
       sheetExpandsWhenScrolledToEdge = true,
-      sheetHeight = [0.5, 0.7],
+      sheetCustomDetents = [],
     } = rest;
 
     if (enabled && isPlatformSupported) {
@@ -319,7 +319,7 @@ class InnerScreen extends React.Component<ScreenProps> {
             sheetGrabberVisible={sheetGrabberVisible}
             sheetCornerRadius={sheetCornerRadius}
             sheetExpandsWhenScrolledToEdge={sheetExpandsWhenScrolledToEdge}
-            sheetHeight={sheetHeight}
+            sheetCustomDetents={sheetCustomDetents}
             gestureResponseDistance={{
               start: gestureResponseDistance?.start ?? -1,
               end: gestureResponseDistance?.end ?? -1,
