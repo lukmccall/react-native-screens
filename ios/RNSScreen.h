@@ -84,7 +84,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL sheetGrabberVisible;
 @property (nonatomic) CGFloat sheetCornerRadius;
 @property (nonatomic) BOOL sheetExpandsWhenScrolledToEdge;
-@property (nonatomic) NSArray<NSNumber *> *sheetHeight;
+@property (nonatomic) NSArray<NSNumber *> *sheetCustomDetents;
 #endif // !TARGET_OS_TV
 
 #ifdef RCT_NEW_ARCH_ENABLED
