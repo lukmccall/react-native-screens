@@ -778,7 +778,7 @@ namespace react = facebook::react;
 
   if (_stackPresentation == RNSScreenStackPresentationFormSheet) {
     if (newScreenProps.sheetCustomDetents != oldScreenProps.sheetCustomDetents) {
-      [self setSheetCustomDetents:[RNSConvert arrayFromVector:newScreenProps.sheetCustomDetents]];
+      [self setSheetCustomDetents:[RNSConvert NSNumberMutableArrayFromFloatVector:newScreenProps.sheetCustomDetents]];
     }
     if (newScreenProps.sheetCustomLargestUndimmedDetent != oldScreenProps.sheetCustomLargestUndimmedDetent) {
       [self
