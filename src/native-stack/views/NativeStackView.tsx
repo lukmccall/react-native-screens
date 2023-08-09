@@ -198,6 +198,16 @@ const RouteView = ({
     sheetNativeDetents = sheetAllowedDetents;
   }
 
+  let sheetUserDefinedUndimmedDetent: number;
+  let sheetNativeUndimmedDetent: SheetDetentTypes;
+  if (typeof sheetLargestUndimmedDetent === 'number') {
+    sheetNativeUndimmedDetent = 'large';
+    sheetUserDefinedUndimmedDetent = sheetLargestUndimmedDetent;
+  } else {
+    sheetNativeUndimmedDetent = sheetLargestUndimmedDetent;
+    sheetUserDefinedUndimmedDetent = -1;
+  }
+
   let {
     customAnimationOnSwipe,
     fullScreenSwipeEnabled,
@@ -261,7 +271,8 @@ const RouteView = ({
       isNativeStack
       style={StyleSheet.absoluteFill}
       sheetAllowedDetents={sheetNativeDetents}
-      sheetLargestUndimmedDetent={sheetLargestUndimmedDetent}
+      sheetLargestUndimmedDetent={sheetNativeUndimmedDetent}
+      sheetCustomLargestUndimmedDetent={sheetUserDefinedUndimmedDetent}
       sheetGrabberVisible={sheetGrabberVisible}
       sheetCornerRadius={sheetCornerRadius}
       sheetExpandsWhenScrolledToEdge={sheetExpandsWhenScrolledToEdge}
