@@ -85,8 +85,6 @@ export type GestureResponseDistanceType = {
   bottom?: number;
 };
 
-export type ClampedNumber = number;
-
 export type SheetDetentTypes = 'medium' | 'large' | 'all';
 
 export type SearchBarPlacement = 'automatic' | 'inline' | 'stacked';
