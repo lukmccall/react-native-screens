@@ -1,6 +1,7 @@
 package com.swmansion.rnscreens
 
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException
+import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.ReadableMap
 import com.facebook.react.common.MapBuilder
 import com.facebook.react.module.annotations.ReactModule
@@ -165,6 +166,10 @@ class ScreenViewManager : ViewGroupManager<Screen>(), RNSScreenManagerInterface<
     override fun setSheetCornerRadius(view: Screen?, value: Float) = Unit
 
     override fun setSheetExpandsWhenScrolledToEdge(view: Screen?, value: Boolean) = Unit
+
+    override fun setSheetCustomDetents(view: Screen?, value: ReadableArray?) = Unit
+
+    override fun setSheetCustomLargestUndimmedDetent(view: Screen?, value: Int) = Unit
 
     override fun getExportedCustomDirectEventTypeConstants(): MutableMap<String, Any> {
         return MapBuilder.of(
