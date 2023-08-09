@@ -94,8 +94,6 @@
       return RNSScreenDetentTypeAll;
     case react::RNSScreenSheetAllowedDetents::Large:
       return RNSScreenDetentTypeLarge;
-    case react::RNSScreenSheetAllowedDetents::Custom:
-      return RNSScreenDetentTypeCustom;
     case react::RNSScreenSheetAllowedDetents::Medium:
       return RNSScreenDetentTypeMedium;
   }
@@ -108,8 +106,6 @@
       return RNSScreenDetentTypeAll;
     case react::RNSScreenSheetLargestUndimmedDetent::Large:
       return RNSScreenDetentTypeLarge;
-    case react::RNSScreenSheetLargestUndimmedDetent::Custom:
-      return RNSScreenDetentTypeCustom;
     case react::RNSScreenSheetLargestUndimmedDetent::Medium:
       return RNSScreenDetentTypeMedium;
   }
